@@ -67,7 +67,7 @@ export default function Home() {
           <ProjectList />
         </div>
         <Contact />
-        <div className="flex gap-12 justify-center">
+        <div className="flex gap-12 justify-center max-sm:hidden">
           <Link href={"./"} className="font-bold text-xl">
             Home
           </Link>

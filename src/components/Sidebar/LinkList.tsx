@@ -39,14 +39,13 @@ function LinkList() {
           className = ""
         }
         return (
-          <>
-            <Link
-              className={`text-xl hover:bg-red duration-500 p-3 pl-5 ${className}`}
-              onClick={setOpenClose}
-              href={item.href}>
-              {item.name}
-            </Link>
-          </>
+          <Link
+            key={item.name}
+            className={`text-xl hover:bg-red duration-500 p-3 pl-5 ${className}`}
+            onClick={setOpenClose}
+            href={item.href}>
+            {item.name}
+          </Link>
         )
       })}
     </>
